@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hamburger {
+  cursor: pointer;
+  position: fixed;
+  right: 1px;
+  top: 1px;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  background: black;
+  width: 75%;
+  height: 10%;
+  position: relative;
+}
+
+.bar::before,
+.bar::after {
+  background: black;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.bar::before {
+  transform: translateY(-0.8rem);
+}
+
+.bar::after {
+  transform: translateY(0.8rem);
+}
+
+/* x effect on navbar */
+.bar,
+.bar::before,
+.bar::after {
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-click .bar {
+  transform: translateX(-5rem);
+  background: transparent;
+}
+
+/* when hamburger is clicked */
+.hamburger-click .bar::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+/* when hamburger is clicked */
+.hamburger-click .bar::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* when hamburger is clicked */
+.hamburger-click .bar::before,
+.hamburger-click .bar::after {
+  background: red;
+}
+
+/*  */
+
+nav {
+  background: red;
+  min-height: 100vh;
+  position: fixed;
+  transition: 300ms ease-in-out;
+  width: 0;
+}
+.nav-width {
+  width: 50%;
+}
+
+navbar {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.navbar-display {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (min-width: 700px) {
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    width: 200px;
+  }
+  navbar {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  main {
+    margin-left: 200px;
+    padding: 1rem;
+    scroll-behavior: smooth;
+  }
+}
