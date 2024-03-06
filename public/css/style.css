@@ -8,10 +8,8 @@ html {
   font-size: 62.5%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+h1{
+  font-size: 2.7rem;
 }
 
 .hamburger {
@@ -83,10 +81,21 @@ html {
 
 nav {
   background: red;
+  background:#f4f2e9;
+
   min-height: 100vh;
   position: fixed;
   transition: 300ms ease-in-out;
   width: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+ 
+}
+
+nav a{
+  color:black;
+  text-decoration: none;
+  font-size: 1.8rem;
 }
 .nav-width {
   width: 50%;
@@ -108,13 +117,22 @@ navbar {
   opacity: 1;
 }
 
+/* navbar content */
+
+.brand{
+  font-size: 2.4rem;
+}
+
+section{
+  font-family: "Pontano Sans", sans-serif;
+}
 @media screen and (min-width: 700px) {
   .hamburger {
     display: none;
   }
 
   nav {
-    width: 200px;
+    width: 32rem;
   }
   navbar {
     visibility: visible;
@@ -122,7 +140,7 @@ navbar {
   }
 
   main {
-    margin-left: 200px;
+    margin-left: 32rem;
     padding: 1rem;
     scroll-behavior: smooth;
   }
