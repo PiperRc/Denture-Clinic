@@ -170,8 +170,48 @@ section {
 /* FOOTER */
 
 footer{
-  background: pink;
+  /* background: green; */
+  background: black;
+  color:white;
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  
 }
+
+footer section{
+  /* border:1px solid green; */
+  margin-top:12rem;
+}
+
+/* rest first section */
+footer section:nth-child(1){
+  margin-top:0;
+}
+
+footer section h1{
+  text-align: left;
+  font-size: 1.88rem;
+  padding-bottom: 3rem;
+
+}
+
+footer section a{
+  display: block;
+  text-decoration: none;
+  color:white;
+}
+
+footer section p{
+  padding-top:1rem;
+}
+
+footer section p,
+footer section a{
+  font-size:1.6rem;
+}
+
 
 @media screen and (min-width: 700px) {
   .hamburger {
