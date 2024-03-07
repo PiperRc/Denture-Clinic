@@ -17,6 +17,7 @@ p {
   font-size: 1.88rem;
 }
 
+/* navbar */
 .hamburger {
   cursor: pointer;
   position: fixed;
@@ -127,7 +128,7 @@ navbar {
   font-size: 2.4rem;
 }
 
-/*  */
+/*Home  */
 section {
   font-family: "Pontano Sans", sans-serif;
 }
@@ -136,15 +137,19 @@ section {
   padding-top: 7rem;
 }
 
-section span {
-  border-bottom: 3px solid green;
-}
-
-section p {
+#Home p,
+#About p {
   line-height: 1.8;
   text-align: center;
   padding-top: 2rem;
 }
+
+#Home span,
+#About span {
+  border-bottom: 3px solid green;
+}
+
+
 /* about */
 
 #About {
