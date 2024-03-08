@@ -17,6 +17,16 @@ p {
   font-size: 1.88rem;
 }
 
+h2,h3{
+  font-size:1.9rem;
+  text-align: center;
+}
+
+h2{
+ text-align: center;
+}
+
+
 /* navbar */
 .hamburger {
   cursor: pointer;
@@ -145,7 +155,9 @@ section {
 }
 
 #Home span,
-#About span {
+#About span,
+#Services span,
+#Faq span{
   border-bottom: 3px solid green;
 }
 
@@ -157,15 +169,50 @@ section {
 }
 
 #About h2{
-  font-size: 1.85rem;
+  
   padding-top:2rem;
-  text-align: center;
+
 }
 
 #About p {
   padding:1rem;
 }
+/* services */
 
+
+
+#Services p{
+  text-align: center;
+  padding-top:3rem;
+}
+
+
+
+#Services section{
+  /* display: flex;
+  flex-direction: column; */
+  padding:1rem;
+}
+
+#Services section div{
+  border:1px solid red;
+  background: #f1f4e9;
+  margin-top:3rem;
+}
+
+
+/* faq */
+
+#Faq{
+  margin-top:3rem;
+}
+#Faq div{
+  padding:2rem;
+}
+
+#Faq p{
+  margin-top:3rem;
+}
 
 /* FOOTER */
 
@@ -185,7 +232,7 @@ footer section{
   margin-top:12rem;
 }
 
-/* rest first section */
+/* reset first section */
 footer section:nth-child(1){
   margin-top:0;
 }
