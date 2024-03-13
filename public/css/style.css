@@ -46,6 +46,7 @@ h2{
   width: 75%;
   height: 10%;
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 
 .bar::before,
@@ -59,18 +60,16 @@ h2{
 
 .bar::before {
   transform: translateY(-0.8rem);
+  transition: all 0.3s ease-in-out;
 }
 
 .bar::after {
   transform: translateY(0.8rem);
+  transition: all 0.3s ease-in-out;
 }
 
 /* x effect on navbar */
-.bar,
-.bar::before,
-.bar::after {
-  transition: all 0.3s ease-in-out;
-}
+
 
 .hamburger-click .bar {
   transform: translateX(-5rem);
@@ -96,9 +95,8 @@ h2{
 /*  */
 
 nav {
-  background: red;
   background: #f4f2e9;
-
+  background-color: ghostwhite;
   min-height: 100vh;
   position: fixed;
   transition: 300ms ease-in-out;
@@ -179,24 +177,25 @@ section {
 }
 /* services */
 
-
+#Services{
+  padding:1.1rem;
+}
 
 #Services p{
   text-align: center;
+  padding: 1rem;
   padding-top:3rem;
+
 }
-
-
 
 #Services section{
   /* display: flex;
   flex-direction: column; */
-  padding:1rem;
+  padding:1.1rem;
 }
 
 #Services section div{
-  border:1px solid red;
-  background: #f1f4e9;
+  background-color: rgb(244,242,233);
   margin-top:3rem;
 }
 
