@@ -213,6 +213,52 @@ section {
   margin-top:3rem;
 }
 
+/* contact */
+#Contact h3 {
+  padding-top: 3rem;
+}
+
+#Contact li {
+  list-style: none;
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-bottom: 3px solid #e8e8e8;
+}
+
+#Contact h2 {
+  padding-top: 3rem;
+}
+
+#Contact i {
+  color: #256eff;
+}
+
+#Contact li span {
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+
+/* contact.html contact form */
+
+#Contact label,
+#Contact input {
+  display: block;
+}
+
+#Contact label {
+  font-size: 1.9rem;
+  margin-top: 1rem;
+}
+#Contact input,
+#Contact .message {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border-radius: 0.5rem;
+}
+
 /* FOOTER */
 
 footer{
