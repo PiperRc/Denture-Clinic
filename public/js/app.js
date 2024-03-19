@@ -4,9 +4,7 @@ let navbar = document.querySelector('navbar');
 let navLinks = document.querySelectorAll('navbar a');
 
 hamburger.addEventListener('click', () => {
-  nav.classList.toggle('nav-width');
-  navbar.classList.toggle('navbar-display');
-  hamburger.classList.toggle('hamburger-click');
+  toggleMenu();
 });
 
 function toggleMenu() {
@@ -36,4 +34,4 @@ function handleMediaChange(event) {
 handleMediaChange(mediaQuery);
 
 // Listen for changes in the media query
-mediaQuery.addListener(handleMediaChange);
+mediaQuery.addEventListener('change', handleMediaChange);
