@@ -331,7 +331,7 @@ footer section a{
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .hamburger {
     display: none;
   }
@@ -346,7 +346,7 @@ footer section a{
 
   main {
     margin-left: 32rem;
-    padding: 1rem;
+   
     scroll-behavior: smooth;
   }
 }
