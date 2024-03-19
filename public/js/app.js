@@ -14,7 +14,7 @@ function toggleMenu() {
 }
 
 // Define the media query
-let mediaQuery = window.matchMedia('(max-width: 800px)');
+let mediaQuery = window.matchMedia('(max-width: 799px)');
 
 function handleMediaChange(event) {
   if (event.matches) {
