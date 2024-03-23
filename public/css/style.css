@@ -331,6 +331,17 @@ footer section a{
 }
 
 
+/* map */
+.map{
+ 
+  text-align: center;
+  margin-top:3rem;
+}
+
+.map iframe{
+  width:98%;
+}
+
 @media screen and (min-width: 800px) {
   .hamburger {
     display: none;
